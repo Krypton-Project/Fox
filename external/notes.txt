@@ -1,0 +1,4 @@
+Notes:
+----------------------------------------------------------
+BASHE is only included for the "on-top" build of Krypton OS Fox. The stand-alone
+OS has many of it's external and internals written in C.

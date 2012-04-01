@@ -1,0 +1,5 @@
+C:\Users\Utilisateur\Desktop\Projects\C++\KRYPTON-OS\admin\bin\Release\admin.exe
+C:\Users\Utilisateur\Desktop\Projects\C++\KRYPTON-OS\admin\bin\Release\admin.pdb
+C:\Users\Utilisateur\Desktop\Projects\C++\KRYPTON-OS\admin\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Utilisateur\Desktop\Projects\C++\KRYPTON-OS\admin\obj\x86\Release\admin.exe
+C:\Users\Utilisateur\Desktop\Projects\C++\KRYPTON-OS\admin\obj\x86\Release\admin.pdb

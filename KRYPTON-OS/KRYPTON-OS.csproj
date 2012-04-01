@@ -1,0 +1,494 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E4412D87-34E7-4655-983E-EAED6AE0E80A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>krypto_os</RootNamespace>
+    <AssemblyName>KRYPTON-OS</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <SupportUrl>http://krypton-project.webs.com/cache/developers.htm</SupportUrl>
+    <ProductName>Krypton OS</ProductName>
+    <PublisherName>Krypton-Project</PublisherName>
+    <SuiteName>Krypton Project</SuiteName>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>fox.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="about.Designer.cs">
+      <DependentUpon>about.cs</DependentUpon>
+    </Compile>
+    <Compile Include="about_workdesk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="about_workdesk.Designer.cs">
+      <DependentUpon>about_workdesk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bios.Designer.cs">
+      <DependentUpon>bios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cli.Designer.cs">
+      <DependentUpon>cli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="clock.Designer.cs">
+      <DependentUpon>clock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RETURNS.cs" />
+    <Compile Include="confirm_update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="confirm_update.Designer.cs">
+      <DependentUpon>confirm_update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="date.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="date.Designer.cs">
+      <DependentUpon>date.cs</DependentUpon>
+    </Compile>
+    <Compile Include="directories.cs" />
+    <Compile Include="disclaimer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="disclaimer.Designer.cs">
+      <DependentUpon>disclaimer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="error_msg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="error_msg.Designer.cs">
+      <DependentUpon>error_msg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="explorer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="explorer.Designer.cs">
+      <DependentUpon>explorer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="filesystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="filesystem.Designer.cs">
+      <DependentUpon>filesystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="file_options.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gui.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gui.Designer.cs">
+      <DependentUpon>gui.cs</DependentUpon>
+    </Compile>
+    <Compile Include="html.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="html.Designer.cs">
+      <DependentUpon>html.cs</DependentUpon>
+    </Compile>
+    <Compile Include="install_iso_error.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="install_iso_error.Designer.cs">
+      <DependentUpon>install_iso_error.cs</DependentUpon>
+    </Compile>
+    <Compile Include="int_test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="int_test.Designer.cs">
+      <DependentUpon>int_test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Krypton-update.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Krypton-update.Designer.cs">
+      <DependentUpon>Krypton-update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="office-writer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="office-writer.Designer.cs">
+      <DependentUpon>office-writer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="openFileMsg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="openFileMsg.Designer.cs">
+      <DependentUpon>openFileMsg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pagesource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pagesource.Designer.cs">
+      <DependentUpon>pagesource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="phantom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="phantom.Designer.cs">
+      <DependentUpon>phantom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prefs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="prefs.Designer.cs">
+      <DependentUpon>prefs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="root.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="root.Designer.cs">
+      <DependentUpon>root.cs</DependentUpon>
+    </Compile>
+    <Compile Include="saveFileDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="saveFileDialog.Designer.cs">
+      <DependentUpon>saveFileDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="security.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="security.Designer.cs">
+      <DependentUpon>security.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sys_managers.cs" />
+    <Compile Include="updateReboot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateReboot.Designer.cs">
+      <DependentUpon>updateReboot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="virtual_.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="virtual_.Designer.cs">
+      <DependentUpon>virtual_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="wallpapercredits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wallpapercredits.Designer.cs">
+      <DependentUpon>wallpapercredits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="amethyst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="amethyst.Designer.cs">
+      <DependentUpon>amethyst.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="about.resx">
+      <DependentUpon>about.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="about_workdesk.resx">
+      <DependentUpon>about_workdesk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bios.resx">
+      <DependentUpon>bios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cli.resx">
+      <DependentUpon>cli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clock.resx">
+      <DependentUpon>clock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="confirm_update.resx">
+      <DependentUpon>confirm_update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="date.resx">
+      <DependentUpon>date.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="disclaimer.resx">
+      <DependentUpon>disclaimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="error_msg.resx">
+      <DependentUpon>error_msg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="explorer.resx">
+      <DependentUpon>explorer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="filesystem.resx">
+      <DependentUpon>filesystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gui.resx">
+      <DependentUpon>gui.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="html.resx">
+      <DependentUpon>html.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="install_iso_error.resx">
+      <DependentUpon>install_iso_error.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="int_test.resx">
+      <DependentUpon>int_test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Krypton-update.resx">
+      <DependentUpon>Krypton-update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="office-writer.resx">
+      <DependentUpon>office-writer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="openFileMsg.resx">
+      <DependentUpon>openFileMsg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pagesource.resx">
+      <DependentUpon>pagesource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="phantom.resx">
+      <DependentUpon>phantom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prefs.resx">
+      <DependentUpon>prefs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="root.resx">
+      <DependentUpon>root.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="saveFileDialog.resx">
+      <DependentUpon>saveFileDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="security.resx">
+      <DependentUpon>security.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateReboot.resx">
+      <DependentUpon>updateReboot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="virtual_.resx">
+      <DependentUpon>virtual_.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wallpapercredits.resx">
+      <DependentUpon>wallpapercredits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="amethyst.resx">
+      <DependentUpon>amethyst.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="legal.rtf" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boot.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image470.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nuclear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Terminal-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Underwater_example.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MyComputer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer 48 Icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\my_computer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diagram-13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\k.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\internet-network-connections-planet-icone-8570-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\terminal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hd.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blank_document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text-document-icone-9498-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text-document-icone-9498-961.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fox.ico" />
+    <Content Include="icon.ico" />
+    <Content Include="k.ico" />
+    <Content Include="kryptonTxt.exe" />
+    <Content Include="legal.txt" />
+    <None Include="Resources\document.png" />
+    <None Include="Resources\desert_main_image.jpg" />
+    <Content Include="Space-Art.ico" />
+    <None Include="Resources\yellow-gradient.jpg" />
+    <None Include="Resources\Gold_gradient_ad.jpg" />
+    <None Include="Resources\thefox.jpg" />
+    <None Include="Resources\wp.jpg" />
+    <None Include="Resources\800px-Fuzzy_Freddy.jpg" />
+    <None Include="Resources\Hawksbill_Turtle.jpg" />
+    <None Include="Resources\login.jpg" />
+    <None Include="Resources\sea_turtle_1024x7681.jpg" />
+    <None Include="Resources\sea_turtle_1024x768.jpg" />
+    <None Include="Resources\Green-Sea-Turtle,-Hawaii.jpg" />
+    <None Include="Resources\wallpaper.jpg" />
+    <None Include="Resources\wallpaper3.jpg" />
+    <None Include="Resources\wallpaper2.jpg" />
+    <None Include="Resources\wallpaper1.jpg" />
+    <None Include="Resources\earth.jpg" />
+    <None Include="Resources\Transparent_Gradient.png" />
+    <None Include="Resources\update.ico" />
+    <None Include="Resources\update.png" />
+    <None Include="Resources\watercolor-grunge-000042-gradient-dark-blue.jpg" />
+    <None Include="Resources\gradient-2-1024x768.gif" />
+    <None Include="Resources\Gradient - Red.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\admin\admin.csproj">
+      <Project>{9F17FBED-1606-4C36-AE55-020C03B3CD51}</Project>
+      <Name>admin</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\external\BASHE\bash\bash.csproj">
+      <Project>{B6D0398B-DB98-4AFB-AF11-4D9F6B1A7E29}</Project>
+      <Name>bash</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
